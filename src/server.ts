@@ -11,6 +11,18 @@ const app = express();
  * PATCH => Alterar uma informação específica
  *  **/
 
+/** 
+ * Tipos de parâmetros
+ * Routes Params => http://localhost:3000/produtos/16543161531
+ * Query Params => http://localhost:3000/produtos?name=teclado&tecladobom
+ * 
+ * Body Params => {
+ *  "name": "teclado",
+ *  "description": "teclado bom"
+ * }
+ * 
+ *  */
+
 app.get("/test", (request, response) => {
   //Request => Entrando
   //Response => Saindo
